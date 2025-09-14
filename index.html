@@ -244,10 +244,70 @@
             border-bottom: none;
         }
 
+        /* Publications Section */
+        .publications {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .publications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .publication-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .publication-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .publication-content {
+            padding: 2rem;
+        }
+
+        .publication-content h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            line-height: 1.4;
+        }
+
+        .publication-venue {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .publication-institution {
+            color: #666;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .publication-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .publication-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
         /* Projects Section */
         .projects {
             padding: 80px 0;
-            background: white;
+            background: #f8f9fa;
         }
 
         .projects-grid {
@@ -417,6 +477,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#publications">Publications</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -505,6 +566,29 @@
                         <li>Docker & Cloud Platforms</li>
                         <li>Data Visualization</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="publications-grid">
+                <div class="publication-card">
+                    <div class="publication-content">
+                        <h3>Stacking-Based Ensemble for Cervical Cancer Detection</h3>
+                        <p class="publication-venue">ICEPECC 2025 - Accepted</p>
+                        <p class="publication-institution">GIFT University, Expected 2025</p>
+                        <p class="publication-description">Research paper on advanced ensemble learning methods for cervical cancer detection using machine learning techniques.</p>
+                        <div class="publication-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Ensemble Methods</span>
+                            <span class="tag">Medical AI</span>
+                            <span class="tag">Cancer Detection</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
